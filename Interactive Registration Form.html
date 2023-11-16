@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <!-- Define a style to format labels -->
+    <style>
+        label{
+            display: inline-block;
+            min-width: 125px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Page title -->
+<h2 align="center"><i><b>To register, fill in the following form</b></i></h2>
+
+<!-- Registration form with action "/submit_registration" and method "post" -->
+<form action="/submit_registration" method="post">
+    <!-- Gender selection with radio buttons -->
+    <label for="sexe">Gender:</label>
+    <input type="radio" id="male" name="sexe" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="sexe" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <!-- Input field for last name -->
+    <label for="nom">Last Name:</label>
+    <input type="text" id="nom" name="nom"><br><br>
+
+    <!-- Input field for first name -->
+    <label for="prenom">First Name:</label>
+    <input type="text" id="prenom" name="prenom"><br><br>
+
+    <!-- Input field for age -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+
+    <!-- Input field for username -->
+    <label for="pseudo">Username:</label>
+    <input type="text" id="pseudo" name="pseudo"><br><br>
+
+    <!-- Input field for password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <!-- Input field for password confirmation -->
+    <label for="password_confirmation">Confirm Password:</label>
+    <input type="password" id="password_confirmation" name="password_confirmation"><br><br>
+
+    <!-- Dropdown for selecting country -->
+    <label for="pays">Country:</label>
+    <select id="pays" name="pays" placeholder="Select your country of residence">
+        <option value="morocco">Morocco</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="china">China</option>
+    </select><br><br>
+
+    <!-- Checkbox for newsletter subscription -->
+    <label for="i"></label>
+    <input id="i" name="i" type="checkbox">
+    <label for="i">I want to receive news every month</label><br><br>
+
+    <!-- Submit and Reset buttons -->
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset Form">
+</form>
+
+</body>
+</html>
